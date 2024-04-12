@@ -1,0 +1,14 @@
+[package]
+name = "rust-cronjob-ollama"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cron = "0.12.1"
+chrono = "0.4"
+apalis = { version = "0.5.1", features = ["cron", "retry", "async-std-comp"] }
+tokio = { version = "1", features = ["full"] }
+chrono-tz = "0.9.0"
+serde = { version = "1.0.197", features = ["derive"] }
+apalis-cron = "0.5.1"
+ollama-rs = "0.1.8"
